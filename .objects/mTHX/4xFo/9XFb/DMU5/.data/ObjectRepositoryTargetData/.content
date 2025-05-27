@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-VZrjxutokuOD90TlNEHSQ" Reference="HPvCUVDsd0-v1_XD6jcaYQ/DMU5qE0ml0KE0-0h1_7XmA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com" CVScreenId="944d6374-d800-4b54-9ccd-72f902a3fc11" DesignTimeRectangle="1029, 572, 378, 57" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' ng-reflect-name='*Role' /&gt;" Guid="237ebe1b-c5b7-483b-b515-c58c8fb37817" IsResponsive="True" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}.exe' title='Rpa Challenge' /&gt;&quot;, in_Browser)]" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="944d6374-d800-4b54-9ccd-72f902a3fc11" DesignTimeRectangle="1029, 548, 128, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Role in Company' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' tag='LABEL' check:innerText='Role in Company' /&gt;" Guid="4bec7f52-73dc-45ad-ad89-75d935649b7b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b6e84f97939c3d32f9efd26da56f2fea.png" xmlns="">0UjcmCGAIgEG7rwdCuuV1-w</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_Browser" />
+    </scg:List>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

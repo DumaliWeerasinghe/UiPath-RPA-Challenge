@@ -1,25 +1,39 @@
-# UiPath-RPA-Challenge
-This automation navigates to the UiPath RPA Challenge page, downloads the Excel file, and fills out the form on the page using the data from the file. It submits the form for each row of data in the Excel file until all entries are completed.
+### Documentation is included in the Documentation folder ###
 
-Process Description:
-This automation is developed using the UiPath REFramework.
 
-Initialization State:
-The process starts by reading the Config file, which is located in the default path: \Data\Config.xlsx inside the project folder.
-It then kills any unwanted processes (e.g., chrome, excel) before starting the automation.
-The names of the processes to be terminated are specified in the Config file, making it easy to update without modifying the code.
-After cleanup, the bot navigates to the RPA Challenge website.
-The URL is also provided in the Config file.
-The browser to be used (e.g., chrome or msedge) is configurable — simply update the Browser value in the Config file to switch.
+### REFrameWork Template ###
+**Robotic Enterprise Framework**
 
-Get Transaction Data State:
-The bot downloads the Excel file from the RPA Challenge page.
-It then reads the downloaded Excel file and stores the data in a DataTable, which is used as the source for Transaction Items.
+* Built on top of *Transactional Business Process* template
+* Uses *State Machine* layout for the phases of automation project
+* Offers high level logging, exception handling and recovery
+* Keeps external settings in *Config.xlsx* file and Orchestrator assets
+* Pulls credentials from Orchestrator assets and *Windows Credential Manager*
+* Gets transaction data from Orchestrator queue and updates back status
+* Takes screenshots in case of system exceptions
 
-Process Transaction State:
-For each transaction (i.e., each row of data), the bot fills in the form on the RPA Challenge page using the corresponding data from the Excel file.
-The form is submitted after each entry.
 
-End Process State:
-The bot closes the browser that was opened during the process.
-Finally, an auto-close message box appears to notify the user that the automation has successfully completed.
+### How It Works ###
+
+1. **INITIALIZE PROCESS**
+ + ./Framework/*InitiAllSettings* - Load configuration data from Config.xlsx file and from assets
+ + ./Framework/*GetAppCredential* - Retrieve credentials from Orchestrator assets or local Windows Credential Manager
+ + ./Framework/*InitiAllApplications* - Open and login to applications used throughout the process
+
+2. **GET TRANSACTION DATA**
+ + ./Framework/*GetTransactionData* - Fetches transactions from an Orchestrator queue defined by Config("OrchestratorQueueName") or any other configured data source
+
+3. **PROCESS TRANSACTION**
+ + *Process* - Process trasaction and invoke other workflows related to the process being automated 
+ + ./Framework/*SetTransactionStatus* - Updates the status of the processed transaction (Orchestrator transactions by default): Success, Business Rule Exception or System Exception
+
+4. **END PROCESS**
+ + ./Framework/*CloseAllApplications* - Logs out and closes applications used throughout the process
+
+
+### For New Project ###
+
+1. Check the Config.xlsx file and add/customize any required fields and values
+2. Implement InitiAllApplications.xaml and CloseAllApplicatoins.xaml workflows, linking them in the Config.xlsx fields
+3. Implement GetTransactionData.xaml and SetTransactionStatus.xaml according to the transaction type being used (Orchestrator queues by default)
+4. Implement Process.xaml workflow and invoke other workflows related to the process being automated

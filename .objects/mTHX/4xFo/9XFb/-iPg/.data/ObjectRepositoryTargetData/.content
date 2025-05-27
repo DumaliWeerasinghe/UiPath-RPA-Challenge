@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7HqoKZp5t0qXJ1ld4Bxajg" Reference="HPvCUVDsd0-v1_XD6jcaYQ/-iPg3DNKGkmqcDhwSgbSig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com" CVScreenId="82d30f59-9a33-4059-b8f2-fa67d3ea02c4" DesignTimeRectangle="1029, 351, 378, 58" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' ng-reflect-name='*Email' /&gt;" Guid="4fa8c8a2-0c56-46d5-87c9-cfab3f729dcd" IsResponsive="True" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}.exe' title='Rpa Challenge' /&gt;&quot;, in_Browser)]" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="82d30f59-9a33-4059-b8f2-fa67d3ea02c4" DesignTimeRectangle="1029, 327, 41, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Email' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' tag='LABEL' check:innerText='Email' /&gt;" Guid="766e76c2-3941-4a21-8579-c45936cfe65b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ad0312233800961bf78971be4908e3a9.png" xmlns="">06kIFuBiPQEmR6TiVNRdL-A</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_Browser" />
+    </scg:List>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

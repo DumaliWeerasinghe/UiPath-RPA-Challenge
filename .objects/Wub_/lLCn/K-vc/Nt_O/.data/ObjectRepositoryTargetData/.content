@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fC0bAJ6zhUi-Os9qaggQEw" Reference="HPvCUVDsd0-v1_XD6jcaYQ/Nt_Ovp9pwE-MPw4stGMBwg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com" CVScreenId="f6884d59-b515-4018-9971-76159780162f" DesignTimeRectangle="28, 918, 445, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Download Excel*' tag='A' /&gt;" Guid="b45494b1-1440-4457-809c-9d1210172ee9" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}.exe' title='Rpa Challenge' /&gt;&quot;, in_Brower)]" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="41d14c2425ba6680522139b4578cd018.png" xmlns="">0AnMAuc3oTkevBRCWK2nFJQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_Brower" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
